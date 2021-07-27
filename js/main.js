@@ -24,7 +24,7 @@ let tentativiMax = numeroElementi - numeroMine;
 
 do {
     var numInserito = parseInt(prompt("Inserisci un numero"));
-    if ((numeriUtente.includes(numInserito) == false) && (contenitoreMine.includes(numInserito) == false)) {
+    if ((numeriUtente.includes(numInserito) == false) && (contenitoreMine.includes(numInserito) == false) && (numInserito <= 100) && (numInserito >= 1)) {
         numeriUtente.push(numInserito);
     }
 } while ((numeriUtente.length < tentativiMax) && (isInArray(contenitoreMine, numInserito)) == false)
